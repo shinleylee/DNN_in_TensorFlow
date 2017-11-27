@@ -1,11 +1,6 @@
 import tensorflow as tf
 import numpy as np
 
-a = tf.constant([1,2,3],tf.float32)
-b = tf.reduce_mean(a)
+input_array = np.random.randint(1000, size=(32, 10))
 
-init = tf.global_variables_initializer()
-sess = tf.Session()
-sess.run(init)
-
-print(sess.run(b))
+print(input_array)
