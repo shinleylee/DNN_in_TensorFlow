@@ -26,7 +26,7 @@ x = tf.placeholder(tf.float32, [None, 2])
 y = tf.placeholder(tf.float32, [None, 1])
 
 # 2 draw the graph
-y_ = addLayer(x, 2, 1)
+y_ = addLayer(inputs=x, inputSize=2, outputSize=1)
 # w = tf.Variable(tf.random_uniform([1,2],-1,1))
 # b = tf.Variable(tf.zeros([1]))
 # y = tf.matmul(w, x_data) + b
